@@ -75,6 +75,8 @@ WSGI_APPLICATION = 'app.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
+AUTH_USER_MODEL = 'core.User'
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
@@ -84,6 +86,8 @@ DATABASES = {
         'PASSWORD': os.environ.get('DB_PASS'),
     }
 }
+
+
 
 
 # Password validation
