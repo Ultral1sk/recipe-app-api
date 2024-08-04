@@ -93,4 +93,3 @@ class PrivateIngredientsApiTests(TestCase):
 
         self.assertEqual(res.status_code, status.HTTP_204_NO_CONTENT)
         self.assertFalse(core.models.Ingredient.objects.filter(id=ingredient.id).exists())
-   
